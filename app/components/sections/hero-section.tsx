@@ -56,7 +56,7 @@ export function HeroSection() {
                             <FaCalendarAlt />
                             Prendre RDV
                         </Button>
-                        <div className="hidden sm:block absolute -bottom-18 -left-12 w-full">
+                        <div className="hidden sm:block absolute -bottom-18 -left-13 w-full">
                             <Logo src="/3_Un_Ptit_Click.png" width={200} height={150} />
                         </div>
                     </div>

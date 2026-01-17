@@ -17,7 +17,7 @@ const config: Config = {
                     foreground: "#000000",
                 },
                 muted: {
-                    DEFAULT: "#A1A1A1",
+                    DEFAULT: "#b1b1b9ff",
                 },
             },
         },
