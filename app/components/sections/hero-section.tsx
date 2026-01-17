@@ -16,7 +16,7 @@ import { Logo } from "../logo";
 export function HeroSection() {
     return (
         <section className="flex flex-col items-center justify-center gap-6
-                            px-8 pt-32 pb-24
+                            px-8 pt-32 sm:pb-24 pb-16
                             text-center
                             max-w-5xl mx-auto">
 
@@ -51,12 +51,12 @@ export function HeroSection() {
             <ActionButtonsCont
                 className="flex-col sm:flex-row gap-4 mt-6"
                 primaryButton={
-                    <div className="relative">
+                    <div className="relative w-full sm:w-auto">
                         <Button variant="primary" className="w-full sm:w-auto bg-gradient-to-r from-primary to-primary-darker">
                             <FaCalendarAlt />
                             Prendre RDV
                         </Button>
-                        <div className="absolute -bottom-18 -left-12 w-full">
+                        <div className="hidden sm:block absolute -bottom-18 -left-12 w-full">
                             <Logo src="/3_Un_Ptit_Click.png" width={200} height={150} />
                         </div>
                     </div>

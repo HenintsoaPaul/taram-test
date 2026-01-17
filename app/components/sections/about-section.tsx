@@ -3,10 +3,10 @@ import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 
 export function AboutSection() {
     const benefits = [
-        "Enterprise-grade security",
-        "99.9% uptime guarantee",
-        "24/7 dedicated support",
-        "Seamless integrations",
+        "Sécurité Renforcée",
+        "Disponibilité 99.9%",
+        "Support Dédié 7j/7",
+        "Intégrations Fluides",
     ];
 
     return (
@@ -23,13 +23,13 @@ export function AboutSection() {
                     <div className="flex flex-col gap-8 order-2 lg:order-1">
                         <div className="space-y-4">
                             <span className="text-primary font-semibold tracking-wide uppercase text-sm">
-                                About Us
+                                À Propos
                             </span>
                             <h2 className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-foreground">
-                                We're building the future of <span className="text-primary">digital innovation</span>
+                                Nous construisons le futur de votre <span className="text-primary">présence digitale</span>
                             </h2>
                             <p className="text-muted text-lg leading-relaxed max-w-xl">
-                                Founded in 2024, AtlasApp has been at the forefront of the technological revolution. Our mission is to empower developers and businesses to create stunning digital experiences with ease and efficiency.
+                                Fondée en 2024, AtlasApp est à la pointe de la révolution technologique. Notre mission est de permettre aux entreprises de créer des expériences numériques époustouflantes avec simplicité et efficacité.
                             </p>
                         </div>
 
@@ -44,7 +44,7 @@ export function AboutSection() {
 
                         <div className="pt-4">
                             <Button variant="primary" size="lg" className="gap-2">
-                                Learn More About Us <FaArrowRight />
+                                En savoir plus <FaArrowRight />
                             </Button>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export function AboutSection() {
 
                             <div className="relative z-10 text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 max-w-xs mx-auto">
                                 <div className="text-6xl font-bold text-foreground mb-2">10k+</div>
-                                <div className="text-muted uppercase tracking-wider text-sm">Happy Customers</div>
+                                <div className="text-muted uppercase tracking-wider text-sm">Clients Satisfaits</div>
                             </div>
 
                             {/* Decorative elements */}
@@ -73,8 +73,8 @@ export function AboutSection() {
                                     ★
                                 </div>
                                 <div>
-                                    <div className="font-bold text-foreground">Top Rated</div>
-                                    <div className="text-xs text-muted">5-star reviews across the board</div>
+                                    <div className="font-bold text-foreground">Top Agence</div>
+                                    <div className="text-xs text-muted">5 étoiles sur tous nos projets</div>
                                 </div>
                             </div>
                         </div>

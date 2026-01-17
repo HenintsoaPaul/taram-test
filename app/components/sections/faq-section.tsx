@@ -41,24 +41,24 @@ export function FaqSection() {
 
     const faqs = [
         {
-            question: "What is AtlasApp?",
-            answer: "AtlasApp is a comprehensive platform designed to help developers build and deploy modern web applications with speed and efficiency. We provide a suite of tools, components, and templates to streamline your workflow.",
+            question: "Qu'est-ce que AtlasApp ?",
+            answer: "AtlasApp est une agence digitale complète conçue pour aider les entreprises à construire et déployer des expériences web modernes avec rapidité et efficacité.",
         },
         {
-            question: "Is there a free trial available?",
-            answer: "Yes, we offer a 14-day free trial on all our premium plans. You can explore all features without any commitment. No credit card required to start.",
+            question: "Proposez-vous un devis gratuit ?",
+            answer: "Oui, nous offrons une consultation initiale gratuite pour analyser vos besoins et vous proposer une solution adaptée sans engagement.",
         },
         {
-            question: "Can I customize the components?",
-            answer: "Absolutely! All our components are built with customization in mind. You can easily adjust colors, spacing, and styles using Tailwind CSS utility classes or our design token system.",
+            question: "Puis-je personnaliser le design ?",
+            answer: "Absolument ! Tous nos projets sont conçus sur-mesure. Nous adaptons les couleurs, les espacements et les styles pour correspondre parfaitement à votre identité de marque.",
         },
         {
-            question: "Do you offer support for large teams?",
-            answer: "We have dedicated enterprise plans that include advanced collaboration features, role-based access control, and priority support to ensure your large team succeeds.",
+            question: "Assurez-vous la maintenance ?",
+            answer: "Oui, nous proposons des plans de maintenance dédiés incluant les mises à jour de sécurité, les sauvegardes et le support prioritaire pour votre tranquillité d'esprit.",
         },
         {
-            question: "How often do you release updates?",
-            answer: "We release major updates every quarter and minor improvements on a weekly basis. Our changelog is publicly available if you want to track our progress.",
+            question: "Quels sont les délais de réalisation ?",
+            answer: "Les délais varient selon la complexité du projet. En moyenne, un site vitrine est livré sous 2 à 4 semaines, tandis que des applications plus complexes peuvent nécessiter plus de temps.",
         },
     ];
 
@@ -73,11 +73,11 @@ export function FaqSection() {
                     <span className="text-primary font-semibold tracking-wide uppercase text-sm">
                         Support
                     </span>
-                    <h2 className="text-4xl font-bold text-foreground">
-                        Frequently Asked Questions
+                    <h2 className="text-4xl font-bold text-white">
+                        Questions Fréquentes
                     </h2>
                     <p className="text-muted text-lg">
-                        Everything you need to know about the product and billing.
+                        Tout ce que vous devez savoir sur nos services et notre accompagnement.
                     </p>
                 </div>
 

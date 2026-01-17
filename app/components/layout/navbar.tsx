@@ -34,7 +34,7 @@ export function Navbar() {
         <header
             className={`fixed top-0 left-0 right-0 safe-top z-50 transition-all duration-300 ${(isScrolled && !isMobileMenuOpen)
                 ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm py-4"
-                : "bg-transparent py-6"
+                : "bg-primary py-6"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -45,7 +45,7 @@ export function Navbar() {
                     </div> */}
                     <Logo src="/2_Logo_Bulle.png" />
                     <span className="text-xl font-bold tracking-tight text-white">
-                        Atlas<span className="text-primary">App</span>
+                        Atlas<span className="text-background">App</span>
                     </span>
                 </Link>
 
@@ -55,7 +55,7 @@ export function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium text-muted hover:text-primary transition-colors"
+                            className="text-sm font-medium text-background hover:text-primary transition-colors"
                         >
                             {link.name}
                         </Link>
@@ -85,7 +85,7 @@ export function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
+                                    className="text-2xl font-medium text-white hover:text-primary transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}

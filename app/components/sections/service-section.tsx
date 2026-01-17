@@ -13,58 +13,58 @@ import { Grid } from "../grid/grid";
 export function ServiceSection() {
     const ourServices = [
         {
-            title: "Modern Architecture",
-            description: "Built with the latest Next.js 15 app directory features for optimal performance.",
+            title: "Architecture Moderne",
+            description: "Propulsé par les dernières fonctionnalités de Next.js pour une performance optimale.",
             icon: <FaCode />,
         },
         {
-            title: "Component Library",
-            description: "Includes a comprehensive set of pre-built, reusable UI components.",
+            title: "Design System",
+            description: "Une bibliothèque de composants UI réutilisables pour une cohérence parfaite.",
             icon: <FaLayerGroup />,
         },
         {
-            title: "Responsive Design",
-            description: "Fully responsive layouts that work perfectly on mobile, tablet, and desktop.",
+            title: "100% Responsive",
+            description: "Des interfaces fluides qui s'adaptent à tous les écrans : mobile, tablette et desktop.",
             icon: <FaMobileAlt />,
         },
         {
-            title: "Theme Support",
-            description: "Built-in support for light and dark modes with Tailwind CSS variables.",
+            title: "Mode Sombre",
+            description: "Support natif du thème clair et sombre pour un confort visuel maximal.",
             icon: <FaPalette />,
         },
         {
-            title: "Security features",
-            description: "Security features out of the box to keep your application safe.",
+            title: "Sécurité Avancée",
+            description: "Protection intégrée pour garder vos données et celles de vos utilisateurs en sécurité.",
             icon: <FaShieldAlt />,
         },
         {
-            title: "Fast Performance",
-            description: "Optimized for speed with server components and efficient code splitting.",
+            title: "Performance Maximale",
+            description: "Optimisation de la vitesse de chargement pour un meilleur référencement (SEO).",
             icon: <FaBolt />,
         },
         {
-            title: "Easy Customization",
-            description: "Easily variable design tokens and configuration options.",
+            title: "Sur-Mesure",
+            description: "Configuration et personnalisation avancée pour répondre à vos besoins uniques.",
             icon: <FaCog />,
         },
         {
             title: "Cloud Ready",
-            description: "Ready to deploy to Vercel or any other cloud hosting provider.",
+            description: "Déploiement simple et rapide sur une infrastructure cloud performante.",
             icon: <FaCloud />,
         },
     ];
 
     return (
         <section id="services" className="py-24">
-            <div className="text-center mb-4">
+            <div className="text-center mb-12">
                 <span className="text-primary font-semibold tracking-wide uppercase text-sm">
-                    Our services
+                    Nos Expertises
                 </span>
-                <h2 className="text-4xl font-bold text-foreground">
-                    Software Development
+                <h2 className="text-4xl font-bold text-white mt-2">
+                    Conception Web & App
                 </h2>
-                <p className="text-muted text-lg">
-                    We offer a range of services to help you build and deploy your web applications.
+                <p className="text-muted text-lg mt-4 max-w-2xl mx-auto">
+                    Nous créons des expériences digitales performantes qui transforment vos visiteurs en clients fidèles.
                 </p>
             </div>
 
