@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "../buttons/button";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Logo } from "../logo";
 
 export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -32,17 +33,18 @@ export function Navbar() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 safe-top z-50 transition-all duration-300 ${(isScrolled && !isMobileMenuOpen)
-                    ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm py-4"
-                    : "bg-transparent py-6"
+                ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-sm py-4"
+                : "bg-transparent py-6"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 z-50">
-                    <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl">
+                    {/* <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl">
                         A
-                    </div>
-                    <span className="text-xl font-bold tracking-tight text-foreground">
+                    </div> */}
+                    <Logo src="/2_Logo_Bulle.png" />
+                    <span className="text-xl font-bold tracking-tight text-white">
                         Atlas<span className="text-primary">App</span>
                     </span>
                 </Link>
