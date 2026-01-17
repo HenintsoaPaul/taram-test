@@ -1,8 +1,11 @@
 import { Button } from "@/app/components/buttons/button";
-import { FaArrowDown, FaCalendar } from "react-icons/fa";
+import { FaArrowDown, FaCalendarAlt } from "react-icons/fa";
 import { MainHeading } from "../typography/main-heading";
 import { Description } from "../typography/description";
 import { ActionButtonsCont } from "../buttons/action-buttons-container";
+import { Chip } from "../chips/chip";
+import { ChipContainer } from "../chips/chip-container";
+import { Logo } from "../logo";
 
 /**
  * The main Hero Section of the landing page.
@@ -13,21 +16,35 @@ import { ActionButtonsCont } from "../buttons/action-buttons-container";
 export function HeroSection() {
     return (
         <section className="flex flex-col items-center justify-center gap-6
-                            px-8 pt-24 pb-16 
+                            px-8 pt-32 pb-16 
                             text-center
                             max-w-5xl mx-auto">
+
+            {/* Chip / Badge */}
+            <ChipContainer
+                chip={
+                    <Chip className="bg-white text-black shadow-[0_0_20px_rgba(87,220,158,0.5)] font-bold text-sm sm:text-base tracking-wide uppercase">
+                        <span className="flex items-center gap-3">
+                            <Logo src="/2_Logo_Bulle.png" />
+                            <p>
+                                CRÉER UN SITE WEB <span className="underline underline-offset-4 decoration-2">VRAIMENT</span> UNIQUE
+                            </p>
+                        </span>
+                    </Chip>
+                }
+            />
+
             {/* Main Heading */}
             <MainHeading className="text-white">
-                <span className="uppercase">Here</span> is a <span className="text-primary underline underline-offset-4">main</span> heading.
-                <br />
-                <span className="text-primary">Important</span> message. Do not <span className="line-through decoration-background">miss</span> our offers.
+                Votre <span className="text-primary">site</span> doit <span className="text-primary">donner envie</span> de{" "}
+                <span className="text-primary">rester</span>, pas de{" "}
+                <span className="line-through decoration-background"><span className="text-primary">revenir</span> en <span className="text-primary">arrière</span></span>.
             </MainHeading>
 
             {/* Description */}
-            <Description className="text-muted">
-                Here is a description of the hero section. There is a line break here.
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit perspiciatis id temporibus mollitia inventore, quam amet aspernatur sapiente officia. Recusandae, ad! Hic assumenda a voluptatibus porro velit, saepe laudantium excepturi.
+            <Description className="text-muted max-w-2xl">
+                Design moderne, SEO solide, Suivi complet :<br className="hidden sm:block" />
+                on construit un site qui retient vos visiteurs et vous apporte des résultats.
             </Description>
 
             {/* Actions */}
@@ -35,14 +52,14 @@ export function HeroSection() {
                 className="flex-col sm:flex-row gap-4 mt-6"
                 primaryButton={
                     <Button variant="primary" className="w-full sm:w-auto bg-gradient-to-r from-primary to-primary-darker">
-                        <FaCalendar className="animate-bounce" />
-                        Book appointment
+                        <FaCalendarAlt />
+                        Prendre RDV
                     </Button>
                 }
                 secondaryButton={
                     <Button variant="outline" className="w-full sm:w-auto">
-                        Our services
-                        <FaArrowDown className="animate-bounce " />
+                        Découvrir nos projets
+                        <FaArrowDown />
                     </Button>
                 }
             />

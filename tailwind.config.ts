@@ -10,10 +10,11 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                background: "#272525ff",
+                background: "#151515",
                 primary: {
-                    DEFAULT: "#90cfecff",
-                    darker: "#1baab4ff",
+                    DEFAULT: "#57dc9e",
+                    darker: "#3bb580",
+                    foreground: "#000000",
                 },
                 muted: {
                     DEFAULT: "#A1A1A1",
