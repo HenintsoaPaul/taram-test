@@ -1,0 +1,24 @@
+You are working under ./instruction.md (strictly).
+
+Analyze the provided screenshot and output:
+
+1. Typography
+   - Font sizes
+   - Font weights
+   - Text hierarchy (heading, body, caption)
+
+2. Colors
+   - List all detected colors in hexadecimal
+   - Identify background vs foreground usage
+
+3. Spacing & layout
+   - Padding / margin patterns
+   - Grid or spacing system if detectable (4px, 8px, etc.)
+
+4. Responsiveness assumptions
+   - Mobile-first interpretation
+   - Any breakpoint-dependent behavior
+
+From the result of the analysis, update the tailwind.config.ts file.
+
+Then, update the text content of the hero-section.tsx file.
